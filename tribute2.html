@@ -1,0 +1,126 @@
+<!--second attempt-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Raspberry Pi the tiny computer</title>
+        <style>
+
+            #title {color: #FFF; font-size: 65px; grid-area: title;}
+            #text {color: #FFF; grid-area: text;}
+            #img-div {color: #FFF; font-size: 15px; grid-area: pic1;}
+            #pic2 {color: #FFF; grid-area: pic2;}
+            #logo {color: #FFF; grid-area: logo;}
+            #logo2 {color: #FFF; grid-area: logo2;}
+            #footer {color: #FFF; grid-area: footer;}
+
+            
+            
+            #main {
+            font-size: 25px;
+            height: 1000px;
+            width: 100%;
+            background: #504;
+            display: grid;
+            grid-template-columns: 15% 60% 15%; 
+            grid-template-rows: 20% 20% 20% 20%;
+            grid-gap: 5%;
+            grid-template-areas:
+                "title title title" 
+                "text pic1 logo2"
+                "text pic1 logo"
+                "text footer pic2"
+            }
+            #image {
+            display: block;
+            height: auto;
+            width: 50%;
+            max-width: 500px;
+            border-radius: 5%;    
+            }
+            #img-caption {
+            color: #FFF;    
+            }
+            #sm-image {
+            height: 50%;
+            width: 80%
+            }
+            #tribute-info {
+            width: 100%;
+            font-size: 25px;
+            color:#FFF;            
+            }
+            #tribute-link {
+                width: 300px;
+                font-size: 30px;
+                color:#FFF;
+            }
+            #tribute-link:hover {
+                color: #F0F;
+                }
+
+            @media(max-width: 600px){
+                #main{
+                font-size: 25px;
+                height: 1000px;
+                max-width: 500px;
+                background: #504;
+                display: grid;
+                grid-template-columns: 100px;
+                grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
+                grid-template-areas:
+                    "title"
+                    "text "
+                    "pic1" 
+                    "logo2"
+                    "text"
+                    "text"
+                    "footer"
+                    "pic1"
+                    "logo" 
+                    "pic2"
+                }
+            }
+            @media(max-width: 600px){
+                #title {
+                    width: 80%; color: #CCC; font-size: 25px; grid-area: title;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="title"><p align="center">This is a page for recognition of the Raspberry pi</p></div>
+            <div id="text">
+                <p id="tribute-info">The raspberry pi foundation is a nonprofit organization that was founded to promote the study of computer science. One of the tools made available is the raspberry pi. It is become a popular project for beginners and do it yourself people. </p>
+            </div>
+            <div align="center" id="img-div">
+                <img id="image" src="https://www.newark.com/productimages/large/en_US/02AH3161-40.jpg" alt="raspberry pi 4B"><div id="img-caption"><caption>Raspberry pi model 4B</caption></div>
+            </div>
+            <div id="pic2">
+                <img id="image" src="https://pbs.twimg.com/profile_images/1455857819534647296/kWvczaKh_400x400.jpg" alt="">
+            </div>
+            <div id="logo"> 
+                <img id="sm-image" src="https://www.kynetics.com/wp-content/uploads/2021/08/RPi-Logo-Stacked-Reg-SCREEN.png" alt="">
+            </div>
+            
+            <div id="logo2"> 
+                <img id="sm-image" src="https://csl.fiu.edu/wp-content/uploads/2017/02/raspberry-pi-logo.jpg" alt="">
+            </div>
+
+
+        <footer>
+            <div id="footer"> 
+                <p id="tribute-p">For more information about </p><a id="tribute-link" href="https://www.raspberrypi.org/about/" target="_blank">The Raspberry Pi Foundation Click here</a>
+            </div>
+        </footer>
+        </div>
+
+    </body>
+
+ 
+
+</html>
+
